@@ -1,0 +1,120 @@
+/*color palette:
+#f8f2e9
+#fee9d6
+#ffdeab
+#eca766
+#f4c6ac
+#cf7d5a
+#5a352c
+#cd6850*/
+*{
+    font-family: EB Garamond;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    margin: 0;
+    font-weight: lighter;
+    
+}
+body{
+    background-color: #ffdeab;
+}
+main section{
+    background: url(imgs/header1.jpg);
+    background-color: transparent;
+    background-size: cover ;
+    height: 100%;
+}
+nav  ul li{
+    flex: 1;
+    flex-flow: space-evenly;
+    flex-direction: row;
+    border-left: #f8f2e9 1px solid;
+    border-right: #f8f2e9 1px solid;
+    font-size: 120%;
+    color:#f8f2e9;
+    margin:2% 0 2% 0;
+
+}
+nav ul li:nth-of-type(1){
+    border-left: none;
+}
+nav ul li:nth-of-type(3){
+    border-right: none;
+}
+nav ul{
+    background-color: #cd6850;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    padding: 0;
+    margin-top:0;
+}
+#countdown{
+    color:#cf7d5a;
+    padding: 10%;
+    text-align: center;
+    margin:0;
+    text-shadow: -0.5px 0.5px 0 #f8f2e9, 0.5px 0.5px 0 #f8f2e9, 0.5px -0.5px 0 #f8f2e9,-0.5px -0.5px 0 #f8f2e9;
+}
+main div{
+    background-color: #ffdeab;
+    color:#5a352c;
+    
+}
+.content{
+    width: 100vw;
+}
+.carrousel{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+   
+}
+.carrousel::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    scroll-snap-align: start;
+    border-radius: 30px;
+    min-height: 300px;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    text-shadow: 2px 2px 2px #f8f2e9;
+    font-size: 150%;
+}
+.card:nth-child(1) {
+    background: url(imgs/milan.jpg);
+    background-size:cover;
+}
+
+.card:nth-child(2) {
+    background: url(imgs/firenze.jpg);
+    background-size: cover;
+}
+
+.card:nth-child(3) {
+    background: url(imgs/roma.jpg);
+    background-size:cover;
+}
+.card:nth-child(4) {
+    background: url(imgs/napoli.jpg);
+    background-size:cover;
+}
+
+.card:nth-child(5) {
+    background: url(imgs/salerno.jpg);
+    background-size:cover;
+}
